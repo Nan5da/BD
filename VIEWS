@@ -1,0 +1,16 @@
+create table City (
+    id int not null auto_increment,
+    name varchar(25),
+    primary key(id)
+);
+
+create table Country (
+    id int not null auto_increment,
+    name varchar(25) not null,
+    population int not null,
+    continent varchar(25) not null,
+    primary key (id)
+);
+
+insert into City (name) values ("Igaci"), ("Maribondo"), ("Lisboa"), ("Nova Iorque");
+insert into Country (name, population, continent) values ("Brasil", 100, "América do Sul"), ("EUA", 350, "América do norte"), ("Portugal", 40, "Europa"), ("Nigéria", 100000000, "África");
