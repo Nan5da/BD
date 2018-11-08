@@ -1,0 +1,8 @@
+create table Produtos (
+    id int not null auto_increment,
+    nome varchar(50),
+    estoque int not null,
+    primary key (id)
+);
+
+insert into Produtos (nome, estoque) values ("Feijão", 10), ("Arroz", 5), ("Farinha", 15);
